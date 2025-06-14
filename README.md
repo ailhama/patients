@@ -54,13 +54,14 @@ uvicorn main:app --reload
 - Endpoint: `http://127.0.0.1:8000/recommend`
 - Method:`POST`
 - Headers: `Content-Type: application/json`
+
 If you access it directly via a browser (click on the link or type it in the address bar), the browser will always use GET, so it will result in an error.
 
-**Akses lewat Swagger UI:**
-- Buka:` http://127.0.0.1:8000/docs`
-- Klik `POST /recommend`
-- Klik tombol **"Try it out"**
-- Isi dengan contoh data:
+**Access via Swagger UI:**
+- Open: `http://127.0.0.1:8000/docs`
+- Click `POST /recommend`
+- Click the **“Try it out”** button
+- Fill in with sample data:
 ```json
 {
   "gender": "female",
@@ -68,7 +69,7 @@ If you access it directly via a browser (click on the link or type it in the add
   "symptoms": ["pusing", "mual", "sulit berjalan"]
 }
 ```
-- Klik tombol **"Execute"**
+- Click the **“Execute”** button
 
 **Response example:**
 ```json
